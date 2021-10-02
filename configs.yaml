@@ -1,0 +1,22 @@
+train:
+  run_id: 'temp'
+  image_root_path: "/data/flickr30k-images"
+  sentence_file_path: "/data/flickr30k/bert_tokenizer_train.pkl"
+  checkpoint_dir: "/ITM/trained_models"
+  max_length: 64
+  batch_size: 32
+  lr: 0.0001
+  adam_alpha: 0.9
+  adam_beta: 0.999
+  epoches_decay: "5_10_15"
+  lr_decay_ratio: 0.1
+  epoches: 30
+
+test:
+  run_id: 'temp'
+  image_root_path: "/data/flickr30k-images"
+  sentence_file_path: "/data/flickr30k/bert_tokenizer_test.pkl"
+  checkpoint_dir: "/ITM/trained_models"
+  max_length: 64
+  batch_size: 8
+  log_dir: "/ITM/trained_models"
